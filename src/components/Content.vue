@@ -28,10 +28,10 @@ export default {
           cardtype: 'purple',
           imgurl: ''
         },
-        {
-          cardtype: 'img',
-          imgurl: 'http://t1.daumcdn.net/cartoon/5913FCAC0234C50001'
-        }
+        // {
+        //   cardtype: 'img',
+        //   imgurl: 'http://t1.daumcdn.net/cartoon/5913FCAC0234C50001'
+        // }
       ]
     }
   }
