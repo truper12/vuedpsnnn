@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="title">
-      DPSNNN
+      dpsnnn
     </div>
     <Navi />
   </header>
@@ -21,6 +21,8 @@ export default {
 header {
   /* padding-top: 0.5rem;
   padding-bottom: 0.5rem; */
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   display: flex;
   align-items: center;
   background: transparent;
@@ -42,8 +44,10 @@ header {
     left: 0;
     right: 0;
     justify-content: space-between;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    /* justify-content: space-around; */
+    padding-left: 3.5rem;
+    padding-right: 5rem;
+    background-color: transparent;
   }
 
   .title {
@@ -62,8 +66,4 @@ header {
     color: rgba(106,123,162,1);
   }
 }
-
-/* .title {
-  margin-left: 1rem;
-} */
 </style>

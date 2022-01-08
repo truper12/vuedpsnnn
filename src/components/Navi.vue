@@ -1,9 +1,11 @@
 <template>
   <nav>
     <ul>
-      <li>menu 1</li>
-      <li>menu 2</li>
-      <li>menu 3</li>
+      <li>단편선</li>
+      <li>예약하기</li>
+      <li>첫번째 이야기</li>
+      <li>두번째 이야기</li>
+      <li>Plans & Pricing</li>
     </ul>
   </nav>
 </template>
@@ -20,12 +22,18 @@ export default {
 @media all and (min-width:768px) {
   nav {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    color: #F3F1DE;
   }
 
-  ul{
+  ul {
     list-style-type: none;
     display: flex;
+  }
+
+  li {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 

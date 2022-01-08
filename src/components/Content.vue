@@ -1,5 +1,6 @@
 <template>
   <main>
+    <TitleCard />
     This is Content
     <!-- <Card cardtype="blue" />
     <Card cardtype="purple" /> -->
@@ -10,12 +11,14 @@
 
 <script>
 import Card from './Card.vue'
+import TitleCard from './TitleCard.vue'
 
 export default {
   name: 'Content',
   components: {
     // HelloWorld
     Card,
+    TitleCard,
   },
   data() {
     return {
@@ -41,5 +44,6 @@ export default {
 <style scoped>
 main {
   width: 100%;
+  display: block;
 }
 </style>
