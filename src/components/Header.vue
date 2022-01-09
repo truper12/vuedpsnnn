@@ -21,8 +21,7 @@ export default {
 header {
   /* padding-top: 0.5rem;
   padding-bottom: 0.5rem; */
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  
   display: flex;
   align-items: center;
   background: transparent;
@@ -39,6 +38,8 @@ header {
 
 @media all and (min-width:768px) {
   header {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -58,6 +59,8 @@ header {
 
 @media all and (max-width:767px) {
   header {
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
     justify-content: center;
   }
 
