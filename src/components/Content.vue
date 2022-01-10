@@ -1,6 +1,7 @@
 <template>
   <main>
     <TitleCard />
+    <IntroCard />
     This is Content
     <!-- <Card cardtype="blue" />
     <Card cardtype="purple" /> -->
@@ -12,6 +13,7 @@
 <script>
 import Card from './Card.vue'
 import TitleCard from './TitleCard.vue'
+import IntroCard from './IntroCard.vue'
 
 export default {
   name: 'Content',
@@ -19,6 +21,7 @@ export default {
     // HelloWorld
     Card,
     TitleCard,
+    IntroCard,
   },
   data() {
     return {
