@@ -1,7 +1,7 @@
 <template>
   <article>
     <div class="titlecard">
-      <div class="headline">
+      <div class="cardheadline">
         <span>공간으로의 이야기,</span>
         <span>단편선</span>
       </div>
@@ -26,7 +26,7 @@ export default {
   flex-direction: column;
   align-items: center;
 }
-.headline {
+.cardheadline {
   color: #F3F1DE;
   display: flex;
   flex-direction: column;
@@ -36,11 +36,11 @@ export default {
 @media all and (min-width:768px) {
   .titlecard {
     background-image: url('https://static.wixstatic.com/media/7d3d32_b22f15e7350f4ca78b86dd57ec629bfc~mv2.jpg/v1/fill/w_1170,h_1162,al_c,q_85,usm_0.66_1.00_0.01/7d3d32_b22f15e7350f4ca78b86dd57ec629bfc~mv2.webp');
-    font-size: 30px;
     padding-top: 20rem;
     padding-bottom: 20rem;
   }
-  .headline {
+  .cardheadline {
+    font-size: 30px;
     margin-top: 5rem;
     margin-bottom: 5rem;
   }
@@ -50,11 +50,11 @@ export default {
   .titlecard {
     background-image: url('https://static.wixstatic.com/media/7d3d32_b22f15e7350f4ca78b86dd57ec629bfc~mv2.jpg/v1/fill/w_640,h_742,al_c,q_85,usm_0.66_1.00_0.01/7d3d32_b22f15e7350f4ca78b86dd57ec629bfc~mv2.webp');
     background-size: cover;
-    font-size: 21px;
     padding-top: 7rem;
     padding-bottom: 7rem;
   }
-  .headline {
+  .cardheadline {
+    font-size: 21px;
     margin-top: 3rem;
     margin-bottom: 3rem;
   }
