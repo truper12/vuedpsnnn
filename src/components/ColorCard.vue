@@ -1,6 +1,6 @@
 <template>
   <article>
-    <div class="introcard">
+    <div class="introcard" :style="{ 'background-color': color }">
       <div class="cardtitle">
         <span>Short stories to</span>
         <span>feel, live, do.</span>
@@ -33,7 +33,11 @@
 export default {
   components: {
     // BookButton,
+  },
+  props: {
+    color: { type: String }
   }
+  
 }
 </script>
 
@@ -41,7 +45,7 @@ export default {
 .introcard {
   display: flex;
   flex-direction: column;
-  background-color: rgb(2, 52, 63);
+  /* background-color: rgb(2, 52, 63); */
   color: #F0EDCC;
 }
 
