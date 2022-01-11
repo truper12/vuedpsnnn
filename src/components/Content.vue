@@ -2,6 +2,7 @@
   <main>
     <TitleCard />
     <IntroCard />
+    <theme-title-card />
     This is Content
     <!-- <Card cardtype="blue" />
     <Card cardtype="purple" /> -->
@@ -14,6 +15,7 @@
 import Card from './Card.vue'
 import TitleCard from './TitleCard.vue'
 import IntroCard from './IntroCard.vue'
+import ThemeTitleCard from './ThemeTitleCard.vue'
 
 export default {
   name: 'Content',
@@ -22,6 +24,7 @@ export default {
     Card,
     TitleCard,
     IntroCard,
+    ThemeTitleCard,
   },
   data() {
     return {
