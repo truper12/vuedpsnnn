@@ -63,6 +63,9 @@
           </template>
         </card-paragraph>
       </template>
+      <template v-slot:cardbookbutton>
+        <book-button color="#ACC7B4" />
+      </template>
     </color-card>
     This is Content
     <!-- <Card cardtype="blue" />
@@ -79,6 +82,7 @@ import TitleCard from './TitleCard.vue'
 import ThemeTitleCard from './ThemeTitleCard.vue'
 import ColorCard from './ColorCard.vue'
 import CardParagraph from './CardParagraph.vue'
+import BookButton from './BookButton.vue'
 
 export default {
   name: 'Content',
@@ -90,6 +94,7 @@ export default {
     ThemeTitleCard,
     ColorCard,
     CardParagraph,
+    BookButton
   },
   data() {
     return {

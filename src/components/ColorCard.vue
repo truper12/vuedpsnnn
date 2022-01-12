@@ -6,16 +6,16 @@
     <div class="cardmain">
       <slot name="cardparagraph"></slot>
     </div>
-    <book-button :color="fontcolor"/>
+    <slot name="cardbookbutton"></slot>
   </article>
 </template>
 
 <script>
-import BookButton from './BookButton.vue'
+// import BookButton from './BookButton.vue'
 
 export default {
   components: {
-    BookButton,
+    // BookButton,
   },
   props: {
     bgcolor: { type: String },
