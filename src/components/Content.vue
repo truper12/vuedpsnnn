@@ -32,7 +32,18 @@
         </card-paragraph>
       </template>
     </color-card>
-    <theme-title-card />
+    <media-card
+      mobileurl="https://static.wixstatic.com/media/11062b_bd7d32dd41fb42d79843cc0ab9a06e53f000.jpg/v1/fill/w_320,h_132,al_c,q_80,usm_0.33_1.00_0.00/11062b_bd7d32dd41fb42d79843cc0ab9a06e53f000.webp"
+      desktopurl="https://video.wixstatic.com/video/11062b_bd7d32dd41fb42d79843cc0ab9a06e53/1080p/mp4/file.mp4">
+      <template v-slot:cardcontent>
+        <media-card-text>
+          <template v-slot:text>첫번째 이야기</template>
+        </media-card-text>
+        <media-card-text>
+          <template v-slot:text>그림자 없는 상자</template>
+        </media-card-text>
+      </template>
+    </media-card>
     <color-card bgcolor="#331B3F" fontcolor="#ACC7B4">
       <template v-slot:cardtitle>
         <span>The box with no shadows</span>
@@ -71,6 +82,18 @@
         <book-button color="#ACC7B4" />
       </template>
     </color-card>
+    <media-card
+      mobileurl="https://static.wixstatic.com/media/11062b_00b0cf7d3e8847a4afbde2407008ec49f000.jpg/v1/fill/w_320,h_167,al_c,q_80,usm_0.33_1.00_0.00/11062b_00b0cf7d3e8847a4afbde2407008ec49f000.webp"
+      desktopurl="https://video.wixstatic.com/video/11062b_00b0cf7d3e8847a4afbde2407008ec49/1080p/mp4/file.mp4">
+      <template v-slot:cardcontent>
+        <media-card-text>
+          <template v-slot:text>두번째 이야기</template>
+        </media-card-text>
+        <media-card-text>
+          <template v-slot:text>사람들은 그것을 행복이라 부르기로 했다</template>
+        </media-card-text>
+      </template>
+    </media-card>
     This is Content
     <!-- <Card cardtype="blue" />
     <Card cardtype="purple" /> -->
@@ -82,10 +105,11 @@
 <script>
 import Card from './Card.vue'
 import TitleCard from './TitleCard.vue'
-import ThemeTitleCard from './ThemeTitleCard.vue'
 import ColorCard from './ColorCard.vue'
 import CardParagraph from './CardParagraph.vue'
 import BookButton from './BookButton.vue'
+import MediaCard from './MediaCard.vue'
+import MediaCardText from './MediaCardText.vue'
 
 export default {
   name: 'Content',
@@ -93,10 +117,11 @@ export default {
     // HelloWorld
     Card,
     TitleCard,
-    ThemeTitleCard,
     ColorCard,
     CardParagraph,
-    BookButton
+    BookButton,
+    MediaCard,
+    MediaCardText,
   },
   data() {
     return {
