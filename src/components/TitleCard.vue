@@ -5,7 +5,7 @@
         <span>공간으로의 이야기,</span>
         <span>단편선</span>
       </div>
-      <BookButton />
+      <BookButton color="#F0EDCC"/>
     </div>
   </article>
 </template>
