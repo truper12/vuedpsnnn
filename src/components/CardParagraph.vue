@@ -1,6 +1,6 @@
 <template>
   <div class="cardparagraph">
-    <slot name="pcontent"></slot>
+    <slot name="cardparagraph"></slot>
   </div>
 </template>
 
@@ -18,14 +18,14 @@ export default {
 @media all and (min-width:768px) {
   .cardparagraph {
     font-size: 20px;
-    margin-bottom: 1rem
+    margin-bottom: 1em
   }
 }
 
 @media all and (max-width:767px) {
   .cardparagraph {
     font-size: 12px;
-    margin-bottom: 1rem
+    margin-bottom: 1em
   }
 }
 </style>

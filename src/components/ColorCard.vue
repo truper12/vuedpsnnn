@@ -4,9 +4,11 @@
       <slot name="cardtitle"></slot>
     </div>
     <div class="cardmain">
-      <slot name="cardparagraph"></slot>
+      <slot name="cardmain"></slot>
     </div>
-    <slot name="cardbookbutton"></slot>
+    <div class="cardbookbutton">
+      <slot name="cardbookbutton"></slot>
+    </div>
   </article>
 </template>
 
@@ -34,6 +36,11 @@ export default {
 .cardtitle {
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+
+.cardmain {
+  width: 100%;
 }
 
 @media all and (min-width:768px) {
@@ -49,6 +56,10 @@ export default {
     font-weight: bold;
     margin-bottom: 4rem;
   }
+
+  .cardbookbutton {
+    margin-top: 4rem;
+  }
 }
 
 @media all and (max-width:767px) {
@@ -57,12 +68,17 @@ export default {
     padding-bottom: 3rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    align-items: center;
   }
   
   .cardtitle {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 2rem;
+  }
+
+  .cardbookbutton {
+    margin-top: 1rem;
   }
 }
 </style>
