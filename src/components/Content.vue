@@ -1,7 +1,6 @@
 <template>
   <main>
     <TitleCard />
-    <!-- <IntroCard /> -->
     <color-card bgcolor="rgb(2, 52, 63)" fontcolor="#F0EDCC">
       <template v-slot:cardtitle>
         <span>Short stories to</span>
@@ -83,7 +82,6 @@
 <script>
 import Card from './Card.vue'
 import TitleCard from './TitleCard.vue'
-// import IntroCard from './IntroCard.vue'
 import ThemeTitleCard from './ThemeTitleCard.vue'
 import ColorCard from './ColorCard.vue'
 import CardParagraph from './CardParagraph.vue'
@@ -95,7 +93,6 @@ export default {
     // HelloWorld
     Card,
     TitleCard,
-    // IntroCard,
     ThemeTitleCard,
     ColorCard,
     CardParagraph,
