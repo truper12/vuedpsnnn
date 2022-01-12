@@ -94,6 +94,46 @@
         </media-card-text>
       </template>
     </media-card>
+    <color-card bgcolor="rgb(106, 123, 162)" fontcolor="#FFDFDE">
+      <template v-slot:cardtitle>
+        <span>We decided to call it happiness</span>
+        <span>사람들은 그것을 행복이라 부르기로 했다</span>
+      </template>
+      <template v-slot:cardmain>
+        <card-paragraph>
+          <template v-slot:cardparagraph>
+            <span>석우는 연기를 들이키며 영원이라는 것에 대해 생각해보았다.</span>
+            <span>아무래도 불행하겠지, 라고 생각하며 날숨.</span>
+            <span>영원히 이어지는게 고작 이런 삶이라면, 하며 틱.</span>
+          </template>
+        </card-paragraph>
+        <card-paragraph>
+          <template v-slot:cardparagraph>
+            <span>손을 털며, 그는 오늘의 근무지의 간판을 올려다 보았다.</span>
+          </template>
+        </card-paragraph>
+        <card-paragraph>
+          <template v-slot:cardparagraph>
+            <span>루드베키아.</span>
+          </template>
+        </card-paragraph>
+        <card-paragraph>
+          <template v-slot:cardparagraph>
+            <span>영생을 발명했다는 기묘한 바이오 회사.</span>
+            <span>공식 발표 이틀 전 사라져버린 연구소장.</span>
+            <span>그 사건에 배정된 형사, 김석우.</span>
+          </template>
+        </card-paragraph>
+        <card-paragraph>
+          <template v-slot:cardparagraph>
+            <span>석우는 루드베키아의 문을 열었다.</span>
+          </template>
+        </card-paragraph>
+      </template>
+      <template v-slot:cardbookbutton>
+        <book-button color="#FFDFDE" />
+      </template>
+    </color-card>
     This is Content
     <!-- <Card cardtype="blue" />
     <Card cardtype="purple" /> -->
