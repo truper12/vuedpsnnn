@@ -42,6 +42,7 @@
         </template>
       </color-card>
     </div>
+    <post-card />
   </main>
 </template>
 
@@ -52,6 +53,7 @@ import CardParagraph from './CardParagraph.vue'
 import BookButton from './BookButton.vue'
 import MediaCard from './MediaCard.vue'
 import MediaCardText from './MediaCardText.vue'
+import PostCard from './PostCard.vue'
 
 export default {
   name: 'Content',
@@ -62,6 +64,7 @@ export default {
     BookButton,
     MediaCard,
     MediaCardText,
+    PostCard,
   },
   data() {
     return {
