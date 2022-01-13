@@ -1,16 +1,12 @@
 <template>
   <article class="postcard">
-    <post />
-    <post />
+    <slot name="postcard"></slot>
   </article>
 </template>
 
 <script>
-import Post from './Post.vue'
-
 export default {
   components: {
-    Post
   },
 }
 </script>

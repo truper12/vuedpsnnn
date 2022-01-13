@@ -1,22 +1,22 @@
 <template>
   <div class="post">
     <div class="postimg">
-      <img class="mobile" src="https://static.wixstatic.com/media/7d3d32_fb2337143586484b8ba78480ab1e76eb~mv2.jpg/v1/fill/w_556,h_367,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01/7d3d32_fb2337143586484b8ba78480ab1e76eb~mv2.webp">
-      <img class="desktop" src="https://static.wixstatic.com/media/7d3d32_fb2337143586484b8ba78480ab1e76eb~mv2.jpg/v1/fill/w_825,h_825,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01/7d3d32_fb2337143586484b8ba78480ab1e76eb~mv2.webp">
+      <img class="mobile" :src="mobileimg">
+      <img class="desktop" :src="desktopimg">
     </div>
     <div class="postcontent">
       <div class="title">
-        그림자 없는 상자
+        <slot name="posttitle"></slot>
       </div>
       <div class="text">
-        "결국 끝도, 시작도, 누나한테 달렸어."
+        <slot name="posttext"></slot>
       </div>
       <div class="more">
         더 보기
       </div>
       <div class="divider" />
       <div class="playtime">
-        1 hr 10 min
+        <slot name="playtime"></slot>
       </div>
       <div class="button">
         <book-button color="black" />
@@ -31,6 +31,10 @@ import BookButton from './BookButton.vue'
 export default {
   components: {
     BookButton,
+  },
+  props: {
+    mobileimg: { type: String },
+    desktopimg: { type: String },
   }
 }
 </script>

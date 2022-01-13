@@ -42,7 +42,21 @@
         </template>
       </color-card>
     </div>
-    <post-card />
+    <post-card>
+      <template v-slot:postcard>
+        <post v-for="(theme, i) in themes" :key="{i}" :mobileimg="theme.postcard.mobileimg" :desktopimg="theme.postcard.desktopimg">
+          <template v-slot:posttitle>
+            <span>{{theme.postcard.posttitle}}</span>
+          </template>
+          <template v-slot:posttext>
+            <span>{{theme.postcard.posttext}}</span>
+          </template>
+          <template v-slot:playtime>
+            <span>{{theme.postcard.playtime}}</span>
+          </template>
+        </post>
+      </template>
+    </post-card>
   </main>
 </template>
 
@@ -54,6 +68,7 @@ import BookButton from './BookButton.vue'
 import MediaCard from './MediaCard.vue'
 import MediaCardText from './MediaCardText.vue'
 import PostCard from './PostCard.vue'
+import Post from './Post.vue'
 
 export default {
   name: 'Content',
@@ -65,6 +80,7 @@ export default {
     MediaCard,
     MediaCardText,
     PostCard,
+    Post,
   },
   data() {
     return {
@@ -98,6 +114,13 @@ export default {
               ['하지만 시현아. 누나도 사람이고, 힘들고, 아파.'],
               ['초자연적인 물체니 뭐니... 동생의 망상을 견뎌주는 것도 이제 한계다.', '지쳐버린 나는 이 허무맹랑한 문자를 받고, 마지막으로 쓴소리를 해주러 시현이의 집으로 향했다.']
             ]
+          },
+          postcard: {
+            mobileimg: 'https://static.wixstatic.com/media/7d3d32_fb2337143586484b8ba78480ab1e76eb~mv2.jpg/v1/fill/w_556,h_367,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01/7d3d32_fb2337143586484b8ba78480ab1e76eb~mv2.webp',
+            desktopimg: 'https://static.wixstatic.com/media/7d3d32_fb2337143586484b8ba78480ab1e76eb~mv2.jpg/v1/fill/w_825,h_825,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01/7d3d32_fb2337143586484b8ba78480ab1e76eb~mv2.webp',
+            posttitle: '그림자 없는 상자',
+            posttext: '"결국 끝도, 시작도, 누나한테 달렸어."',
+            playtime: '1 hr 10 min'
           }
         },
         {
@@ -118,6 +141,13 @@ export default {
               ['영생을 발명했다는 기묘한 바이오 회사.','공식 발표 이틀 전 사라져버린 연구소장.','그 사건에 배정된 형사, 김석우.'],
               ['석우는 루드베키아의 문을 열었다.']
             ]
+          },
+          postcard: {
+            mobileimg: 'https://static.wixstatic.com/media/7d3d32_b23f50c86c5a482f84707a3db1aaea4c~mv2.jpg/v1/fill/w_556,h_367,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01/7d3d32_b23f50c86c5a482f84707a3db1aaea4c~mv2.webp',
+            desktopimg: 'https://static.wixstatic.com/media/7d3d32_b23f50c86c5a482f84707a3db1aaea4c~mv2.jpg/v1/fill/w_825,h_825,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01/7d3d32_b23f50c86c5a482f84707a3db1aaea4c~mv2.webp',
+            posttitle: '사람들은 그것을 행복이라 부르기로 했다',
+            posttext: '석우는 루드베키아의 문을 열었다.',
+            playtime: '1 hr 10 min'
           }
         }
       ]
