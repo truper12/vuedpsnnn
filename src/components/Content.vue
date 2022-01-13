@@ -1,6 +1,8 @@
 <template>
   <main>
+    <!-- Title -->
     <TitleCard />
+    <!-- Intro -->
     <color-card :bgcolor="introcard.bgcolor" :fontcolor="introcard.fontcolor">
       <template v-slot:cardtitle>
         <span v-for="(text, idx) in introcard.cardtitle" :key="{idx}">{{text}}</span>
@@ -13,6 +15,7 @@
         </card-paragraph>
       </template>
     </color-card>
+    <!-- Themes -->
     <div v-for="(theme, i) in themes" :key="{i}">
       <media-card
         :mobileurl="theme.mediacard.mobileurl"
@@ -39,16 +42,10 @@
         </template>
       </color-card>
     </div>
-    This is Content
-    <!-- <Card cardtype="blue" />
-    <Card cardtype="purple" /> -->
-    <Card v-for="(card, idx) in cards" :key="{idx}" :item="card" />
-    <!-- <Card :items="cards" /> -->
   </main>
 </template>
 
 <script>
-import Card from './Card.vue'
 import TitleCard from './TitleCard.vue'
 import ColorCard from './ColorCard.vue'
 import CardParagraph from './CardParagraph.vue'
@@ -59,8 +56,6 @@ import MediaCardText from './MediaCardText.vue'
 export default {
   name: 'Content',
   components: {
-    // HelloWorld
-    Card,
     TitleCard,
     ColorCard,
     CardParagraph,
@@ -122,23 +117,6 @@ export default {
             ]
           }
         }
-      ],
-
-
-
-      cards: [
-        {
-          cardtype: 'blue',
-          imgurl: ''
-        },
-        {
-          cardtype: 'purple',
-          imgurl: ''
-        },
-        // {
-        //   cardtype: 'img',
-        //   imgurl: 'http://t1.daumcdn.net/cartoon/5913FCAC0234C50001'
-        // }
       ]
     }
   }
