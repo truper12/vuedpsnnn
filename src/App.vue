@@ -1,13 +1,11 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-  <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   <Header />
   <Content />
   <Footer />
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
 import Header from './components/Header.vue'
 import Content from './components/Content.vue'
 import Footer from './components/Footer.vue'
@@ -15,7 +13,6 @@ import Footer from './components/Footer.vue'
 export default {
   name: 'App',
   components: {
-    // HelloWorld
     Header,
     Content,
     Footer,
@@ -24,16 +21,18 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: 'Noto Serif KR', serif;
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600&display=swap');
+}
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600&display=swap'); */
 html, body {
   margin: 0;
   padding: 0;
 }
-/* #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+#app {
+  font-family: 'Noto Serif KR', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-} */
+}
 </style>

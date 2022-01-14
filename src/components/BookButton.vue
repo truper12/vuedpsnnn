@@ -15,6 +15,7 @@ export default {
 <style scoped>
 
 button {
+  font-family: 'Noto Serif KR', serif;
   background-color: transparent;
 }
 

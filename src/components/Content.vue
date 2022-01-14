@@ -1,8 +1,8 @@
 <template>
   <main>
-    <!-- Title -->
+    <!-- 1. Title -->
     <TitleCard />
-    <!-- Intro -->
+    <!-- 2. Intro -->
     <color-card :bgcolor="introcard.bgcolor" :fontcolor="introcard.fontcolor">
       <template v-slot:cardtitle>
         <span v-for="(text, idx) in introcard.cardtitle" :key="{idx}">{{text}}</span>
@@ -15,8 +15,9 @@
         </card-paragraph>
       </template>
     </color-card>
-    <!-- Themes -->
+    <!-- 3. Themes -->
     <div v-for="(theme, i) in themes" :key="{i}">
+      <!-- 3-1. Theme-Title -->
       <media-card
         :mobileurl="theme.mediacard.mobileurl"
         :desktopurl="theme.mediacard.desktopurl">
@@ -26,6 +27,7 @@
           </media-card-text>
         </template>
       </media-card>
+      <!-- 3-2. Theme-Content -->
       <color-card :bgcolor="theme.colorcard.bgcolor" :fontcolor="theme.colorcard.fontcolor">
         <template v-slot:cardtitle>
           <span v-for="(title, j) in theme.colorcard.cardtitle" :key="{j}">{{title}}</span>
@@ -42,6 +44,7 @@
         </template>
       </color-card>
     </div>
+    <!-- 4. PostCard -->
     <post-card>
       <template v-slot:postcard>
         <post v-for="(theme, i) in themes" :key="{i}" :mobileimg="theme.postcard.mobileimg" :desktopimg="theme.postcard.desktopimg">
