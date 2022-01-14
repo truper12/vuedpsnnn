@@ -15,8 +15,29 @@ export default {
   components: {
   },
   props: {
+    test: { type: String },
     mobileurl: { type: String },
     desktopurl: { type: String },
+  },
+  // data() {
+  //   return {
+  //     scrollPosition: 0
+  //   }
+  // },
+  methods: {
+    handleScroll(event) {
+      console.log(`id: ${this.test} / scrollY: ${window.scrollY} / scrollTop: ${event.target.scrollTop}`)
+      // console.log(window.scrollY)
+      // console.log(event.target.scrollTop)
+      // this.scrollPosition = event.target.scrollTop
+    }
+  },
+  mounted() {
+    console.log(window.scrollY)
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  unmounted() {
+    window.removeEventListener('scroll', this.handleScroll);
   }
 }
 </script>
