@@ -2,7 +2,7 @@
   <article class="mediacard">
     <div class="cardbackmedia">
       <img :src="mobileurl" />
-      <video autoplay loop :src="desktopurl" type="video/mp4" />
+      <video autoplay loop muted :src="desktopurl" type="video/mp4" />
     </div>
     <div class="cardcontent">
       <slot name="cardcontent"></slot>
